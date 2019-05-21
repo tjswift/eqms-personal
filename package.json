@@ -1,0 +1,90 @@
+{
+  "name": "eqms-app",
+  "version": "0.1.0",
+  "description": "Main EQMS application, also serves as a container for a variety of modules containing core business logic.",
+  "private": true,
+  "devDependencies": {
+    "@types/echarts": "^4.1.8",
+    "@types/enzyme": "^3.9.1",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "@types/history": "^4.7.2",
+    "@types/jest": "23.3.9",
+    "@types/moment": "^2.13.0",
+    "@types/node": "10.12.10",
+    "@types/pure-render-decorator": "^0.2.28",
+    "@types/react": "^16.8.12",
+    "@types/react-addons-css-transition-group": "^15.0.5",
+    "@types/react-dom": "^16.8.3",
+    "@types/react-grid-layout": "^0.16.7",
+    "@types/react-redux": "^6.0.14",
+    "@types/react-router-dom": "^4.3.1",
+    "@types/react-router-redux": "^5.0.18",
+    "babel-jest": "^23.6.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.11.2",
+    "enzyme-to-json": "^3.3.5",
+    "jest": "^23.6.0",
+    "typescript": "^3.4.2"
+  },
+  "dependencies": {
+    "@blueprintjs/core": "^3.15.0",
+    "@blueprintjs/datetime": "^3.8.0",
+    "@blueprintjs/icons": "^3.7.0",
+    "@blueprintjs/select": "^3.8.0",
+    "@types/react-table": "^6.8.1",
+    "@types/react-test-renderer": "^16.8.1",
+    "babel-plugin-emotion": "^9.2.11",
+    "connected-react-router": "^4.5.0",
+    "dotenv-expand": "^4.2.0",
+    "echarts": "^4.2.1",
+    "echarts-for-react": "^2.0.15-beta.0",
+    "emotion": "^9.2.12",
+    "emotion-theming": "^9.2.9",
+    "history": "^4.9.0",
+    "http2": "^3.3.7",
+    "moment": "^2.24.0",
+    "polished": "^2.3.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-emotion": "^9.2.12",
+    "react-grid-layout": "^0.16.6",
+    "react-redux": "^5.1.1",
+    "react-router-dom": "^4.3.1",
+    "react-router-redux": "^4.0.8",
+    "react-scripts": "^2.1.8",
+    "react-table": "^6.9.2",
+    "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-saga": "^0.16.2",
+    "typeface-ibm-plex-mono": "0.0.61",
+    "typeface-ibm-plex-sans": "0.0.61",
+    "typesafe-actions": "^4.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "coverage": "set CI=true&&react-scripts test --coverage",
+    "test": "set CI=true&&react-scripts test",
+    "test:debug": "set CI=true&&react-scripts --inspect-brk test --runInBand",
+    "test:watch": "react-scripts test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Schezaam/eqms-app.git"
+  },
+  "author": "NSI Engineering",
+  "license": "LicenseRef-LICENSE",
+  "bugs": {
+    "url": "https://nsieng.atlassian.net/projects/EQMS/board"
+  },
+  "homepage": "https://github.com/Schezaam/eqms-app#readme",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
