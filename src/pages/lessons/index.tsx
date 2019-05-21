@@ -185,13 +185,21 @@ class lessonsTable extends React.Component<tableProps, tableState>{
       {
         Header: "Mitigation",
         accessor: "mitigation"
+      },
+      {
+        Header: '',
+        Cell: (row: any) => (
+          <div>
+            <button onClick={() => console.log("It works")}>View Record</button>
+          </div>
+        )
       }
     ] 
 
     console.log(columns);
       return(
-        <ReactTable data={data} columns={columns} getTrProps={(data: Lesson) => ({
-          onClick: <Redirect to='./layout/Root' />
+        <ReactTable data={data} columns={columns} getTrProps={(data: any) => ({
+          onClick: console.log("It clicks!")
         })}></ReactTable>
         
       );
