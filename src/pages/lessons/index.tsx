@@ -46,8 +46,7 @@ class lessonsTable extends React.Component<tableProps, tableState>{
   }
     
     render() {
-
-      const data: Lesson[] = [
+      const data: Lesson[] = [ 
         {
             key: "LL-1",
             summary: "I didn't get the information I needed in time to produce a requested deliverable by the requsted due date.",
@@ -157,7 +156,7 @@ class lessonsTable extends React.Component<tableProps, tableState>{
         recommendation: "1.  Document proper cultural practices in procedure. 2.  Train all affected parties on new procedure. 3.  Monitor for correct communication methods.",
         actionsTaken: "1. Updated PQP XXX.  2.  Spent first ten minutes of weekly update meeting training/discussing new cultural practices.  3. Implemented monitoring.",
         differenceMade: true
-    }     
+      }     
     ];
 
       const columns = [{
@@ -188,23 +187,22 @@ class lessonsTable extends React.Component<tableProps, tableState>{
       },
       {
         Header: '',
-        Cell: (row: any) => (
-          <div>
-            <button onClick={() => console.log("It works")}>View Record</button>
-          </div>
-        )
+        Cell: (props: any) => {
+          return(<button onClick={() => console.log("It works")}
+           onClick={() => 
+            console.log("props", props)
+          }
+          >View Record</button>)        
+        } 
       }
     ] 
 
     console.log(columns);
       return(
-        <ReactTable data={data} columns={columns} getTrProps={(data: any) => ({
-          onClick: console.log("It clicks!")
-        })}></ReactTable>
-        
+        <ReactTable data={data} columns={columns}></ReactTable>
       );
     }
-  
+
 }
 
 // // Separate state props + dispatch props to their own interfaces.
@@ -299,8 +297,9 @@ class lessonsTable extends React.Component<tableProps, tableState>{
 //   fetchRequest: () => dispatch(fetchRequest())
 // })
 
-// // Now let's connect our component!
-// // With redux v4's improved typings, we can finally omit generics here.
+// Now let's connect our component!
+// With redux v4's improved typings, we can finally omit generics here.
+
 // export default connect(
 //   mapStateToProps,
 //   mapDispatchToProps

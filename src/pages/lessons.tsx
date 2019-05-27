@@ -2,7 +2,7 @@ import * as React from 'react'
 import { connect } from 'react-redux'
 import { RouteComponentProps, Route, Switch } from 'react-router-dom'
 
-import LessonsIndexPage from './lessons/index'
+//import LessonsIndexPage from './lessons/index'
 import ShowLessonPage from './lessons/show'
 
 import { ApplicationState, ConnectedReduxProps } from '../store'
@@ -41,4 +41,4 @@ const mapStateToProps = ({ lessons }: ApplicationState) => ({
 
 // Now let's connect our component!
 // With redux v4's improved typings, we can finally omit generics here.
-export default connect(mapStateToProps)(LessonsPage)
+export default connect(mapStateToProps)(LessonsPage);
